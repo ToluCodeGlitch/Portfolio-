@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  background: rgba(0, 28, 61, 0.8);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: rgba(0, 41, 80, 0.9);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #aad1f7;
+}
+
+h2 {
+  border-bottom: 2px solid #2998ff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.project {
+  background: #001f3f;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.02);
+  background-color: #003366;
+}
+
+.project a {
+  color: #29abe2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: rgba(0, 41, 80, 0.9);
+  font-size: 0.9rem;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
