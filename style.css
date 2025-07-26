@@ -1,66 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tolulope Oni - Cybersecurity Analyst</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>Tolulope Oni</h1>
-    <p>Cybersecurity Analyst & Web Developer</p>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4faff;
+  color: #003366;
+  overflow-x: hidden;
+}
 
-  <section id="intro" class="reveal">
-    <h2>About Me</h2>
-    <p>
-      I’m a cybersecurity analyst and web developer passionate about digital safety and clean design. 
-      I've built phishing simulations, password strength analyzers, and platforms supporting recovery and storytelling.
-    </p>
-  </section>
+header {
+  background: url('https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
 
-  <section id="projects" class="reveal">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>🔐 Password Strength Analyzer</h3>
-      <p>Analyzes password strength in real time using JavaScript logic and clean UI.</p>
-      <a href="https://tolucodeglitch.github.io/Password-Strength-Analyzer/" target="_blank">View Project</a>
-    </div>
-    <div class="project">
-      <h3>🎣 Phishing Awareness Simulation</h3>
-      <p>A simulated phishing detection site used to teach awareness and user analysis.</p>
-      <a href="https://tolucodeglitch.github.io/Phishing-Awareness/" target="_blank">View Project</a>
-    </div>
-    <div class="project">
-      <h3>💬 Recovery Companion</h3>
-      <p>A supportive space for recovering addicts, built with care and empathy.</p>
-      <a href="https://tolucodeglitch.github.io/Recovery-Companion/index.html" target="_blank">View Project</a>
-    </div>
-    <div class="project">
-      <h3>📚 Short Story Hub</h3>
-      <p>A simple, mobile-first site for reading short fiction. Built with creativity in mind.</p>
-      <a href="https://tolucodeglitch.github.io/short-story-hub/" target="_blank">View Project</a>
-    </div>
-  </section>
+.header-overlay {
+  background: rgba(0, 0, 50, 0.6);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  animation: fadeDown 2s ease;
+}
 
-  <section id="contact" class="reveal">
-    <h2>Contact Me</h2>
-    <p>You can reach me directly via email by clicking the button below:</p>
-    <a href="mailto:wordsbytolu@gmail.com">
-      <button>Send Email</button>
-    </a>
-    <p>📩 Email: <a href="mailto:wordsbytolu@gmail.com">wordsbytolu@gmail.com</a></p>
-  </section>
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
 
-  <footer>
-    <p>&copy; 2025 Tolulope Oni. All rights reserved.</p>
-  </footer>
+blockquote {
+  font-style: italic;
+  margin-top: 10px;
+}
 
-  <script src="script.js"></script>
-</body>
-</html>
+.projects, .more-info {
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.project {
+  background: #ffffff;
+  border-left: 5px solid #007acc;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 70, 140, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 70, 140, 0.2);
+}
+
+.project a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #e0f0ff;
+  margin-top: 40px;
+}
+
+button {
+  background: #007acc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #005fa3;
+}
+
+#moreDetails {
+  margin-top: 15px;
+  padding: 15px;
+  background: #e6f4ff;
+  border-left: 4px solid #007acc;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
