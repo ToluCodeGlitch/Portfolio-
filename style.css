@@ -1,91 +1,66 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tolulope Oni - Cybersecurity Analyst</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Tolulope Oni</h1>
+    <p>Cybersecurity Analyst & Web Developer</p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-body {
-  background: #0e1e2b;
-  color: #fff;
-  line-height: 1.6;
-  padding: 0 20px;
-}
+  <section id="intro" class="reveal">
+    <h2>About Me</h2>
+    <p>
+      I’m a cybersecurity analyst and web developer passionate about digital safety and clean design. 
+      I've built phishing simulations, password strength analyzers, and platforms supporting recovery and storytelling.
+    </p>
+  </section>
 
-header {
-  text-align: center;
-  padding: 40px 0;
-}
+  <section id="projects" class="reveal">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>🔐 Password Strength Analyzer</h3>
+      <p>Analyzes password strength in real time using JavaScript logic and clean UI.</p>
+      <a href="https://tolucodeglitch.github.io/Password-Strength-Analyzer/" target="_blank">View Project</a>
+    </div>
+    <div class="project">
+      <h3>🎣 Phishing Awareness Simulation</h3>
+      <p>A simulated phishing detection site used to teach awareness and user analysis.</p>
+      <a href="https://tolucodeglitch.github.io/Phishing-Awareness/" target="_blank">View Project</a>
+    </div>
+    <div class="project">
+      <h3>💬 Recovery Companion</h3>
+      <p>A supportive space for recovering addicts, built with care and empathy.</p>
+      <a href="https://tolucodeglitch.github.io/Recovery-Companion/index.html" target="_blank">View Project</a>
+    </div>
+    <div class="project">
+      <h3>📚 Short Story Hub</h3>
+      <p>A simple, mobile-first site for reading short fiction. Built with creativity in mind.</p>
+      <a href="https://tolucodeglitch.github.io/short-story-hub/" target="_blank">View Project</a>
+    </div>
+  </section>
 
-header h1 {
-  font-size: 3em;
-  color: #4fc3f7;
-}
+  <section id="contact" class="reveal">
+    <h2>Contact Me</h2>
+    <p>You can reach me directly via email by clicking the button below:</p>
+    <a href="mailto:wordsbytolu@gmail.com">
+      <button>Send Email</button>
+    </a>
+    <p>📩 Email: <a href="mailto:wordsbytolu@gmail.com">wordsbytolu@gmail.com</a></p>
+  </section>
 
-header p {
-  color: #bbb;
-}
+  <footer>
+    <p>&copy; 2025 Tolulope Oni. All rights reserved.</p>
+  </footer>
 
-section {
-  max-width: 900px;
-  margin: 40px auto;
-}
-
-h2 {
-  border-bottom: 2px solid #4fc3f7;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  font-size: 1.8em;
-}
-
-.project {
-  background: #1f2d3a;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.project a {
-  color: #4fc3f7;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.project a:hover {
-  text-decoration: underline;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-input, textarea {
-  padding: 12px;
-  border: none;
-  border-radius: 6px;
-  background: #2a3d4f;
-  color: #fff;
-}
-
-button {
-  padding: 12px;
-  background: #4fc3f7;
-  color: #000;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-button:hover {
-  background: #03a9f4;
-}
-
-footer {
-  text-align: center;
-  margin: 40px 0;
-  color: #888;
-}
+  <script src="script.js"></script>
+</body>
+</html>
