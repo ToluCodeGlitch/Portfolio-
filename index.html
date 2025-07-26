@@ -3,62 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tolulope Oni - Cybersecurity Analyst</title>
+  <title>Tolulope Oni | Cybersecurity Analyst & Web Developer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Tolulope Oni</h1>
-    <p>Cybersecurity Analyst & Web Developer</p>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="header-overlay">
+      <h1>Tolulope Oni</h1>
+      <p>Cybersecurity Analyst & Web Developer</p>
+      <blockquote>"Security is not a product, but a process." – Bruce Schneier</blockquote>
+    </div>
   </header>
 
-  <section id="intro" class="reveal">
-    <h2>About Me</h2>
-    <p>
-      I’m a cybersecurity analyst and web developer passionate about digital safety and clean design. 
-      I've built phishing simulations, password strength analyzers, and platforms supporting recovery and storytelling.
-    </p>
-  </section>
+  <section class="projects">
+    <h2>My Projects</h2>
 
-  <section id="projects" class="reveal">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>🔐 Password Strength Analyzer</h3>
-      <p>Analyzes password strength in real time using JavaScript logic and clean UI.</p>
-      <a href="https://tolucodeglitch.github.io/Password-Strength-Analyzer/" target="_blank">View Project</a>
-    </div>
-    <div class="project">
-      <h3>🎣 Phishing Awareness Simulation</h3>
-      <p>A simulated phishing detection site used to teach awareness and user analysis.</p>
-      <a href="https://tolucodeglitch.github.io/Phishing-Awareness/" target="_blank">View Project</a>
-    </div>
-    <div class="project">
-      <h3>💬 Recovery Companion</h3>
-      <p>A supportive space for recovering addicts, built with care and empathy.</p>
-      <a href="https://tolucodeglitch.github.io/Recovery-Companion/index.html" target="_blank">View Project</a>
-    </div>
-    <div class="project">
+    <div class="project fade-in">
       <h3>📚 Short Story Hub</h3>
-      <p>A simple, mobile-first site for reading short fiction. Built with creativity in mind.</p>
-      <a href="https://tolucodeglitch.github.io/short-story-hub/" target="_blank">View Project</a>
+      <p>A platform to upload and read both fiction and true stories.</p>
+      <a href="https://tolucodeglitch.github.io/short-story-hub/" target="_blank">Visit Site</a>
+    </div>
+
+    <div class="project fade-in">
+      <h3>🌱 Recovery Companion</h3>
+      <p>A serene and supportive site for individuals recovering from addiction.</p>
+      <a href="https://tolucodeglitch.github.io/Recovery-Companion/index.html" target="_blank">Visit Site</a>
+    </div>
+
+    <div class="project fade-in">
+      <h3>🛡️ PhishGuard</h3>
+      <p>A tool to analyze suspicious URLs and detect phishing threats.</p>
+      <a href="https://tolucodeglitch.github.io/Phishsleuth/" target="_blank">Visit Site</a>
+    </div>
+
+    <div class="project fade-in">
+      <h3>🔐 Password Strength Analyzer</h3>
+      <p>An interactive tool to evaluate password security levels.</p>
+      <a href="https://tolucodeglitch.github.io/Password-Strength-Analyzer/" target="_blank">Visit Site</a>
+    </div>
+
+    <div class="project fade-in">
+      <h3>🔢 SHA-256 Hash Generator</h3>
+      <p>Generate SHA-256 hashes quickly and securely.</p>
+      <a href="https://tolucodeglitch.github.io/SHA256-Hash-Tool-/" target="_blank">Visit Site</a>
     </div>
   </section>
 
-  <section id="contact" class="reveal">
-    <h2>Contact Me</h2>
-    <p>You can reach me directly via email by clicking the button below:</p>
-    <a href="mailto:wordsbytolu@gmail.com">
-      <button>Send Email</button>
-    </a>
-    <p>📩 Email: <a href="mailto:wordsbytolu@gmail.com">wordsbytolu@gmail.com</a></p>
+  <section class="more-info fade-in">
+    <button id="toggleInfoBtn">More About Me</button>
+    <div id="moreDetails" class="hidden">
+      <p>I’m a self-taught cybersecurity analyst and web developer. I specialize in building tools that secure the web and improve digital experience. I believe in security through simplicity and clarity.</p>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Tolulope Oni. All rights reserved.</p>
+    <p>Contact me: <a href="mailto:wordsbytolu@gmail.com">wordsbytolu@gmail.com</a></p>
   </footer>
 
   <script src="script.js"></script>
